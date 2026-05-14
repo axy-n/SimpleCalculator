@@ -44,6 +44,9 @@ pipeline {
             }
         }
         stage('Shadow Jar') {
+            when {
+                branch 'main'
+            }
             steps {
                 bat 'gradlew shadowJar'
                 // on Unix/Linux/MacOS, use the Bourne shell with sh
