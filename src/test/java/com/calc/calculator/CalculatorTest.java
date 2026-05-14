@@ -18,4 +18,10 @@ class CalculatorTest {
         Calculator calculator = new Calculator();
         assertEquals(5, calculator.sum(0, 5));
     }
+
+    @Test
+    void differenceTestAddTwoNumbersExpectDifference() {
+        Calculator calculator = new Calculator();
+        assertEquals(0, calculator.difference(5, 5));
+    }
 }
