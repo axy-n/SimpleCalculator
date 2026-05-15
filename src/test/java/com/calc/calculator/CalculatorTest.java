@@ -24,4 +24,10 @@ class CalculatorTest {
         Calculator calculator = new Calculator();
         assertEquals(1, calculator.difference(6, 5));
     }
+
+    @Test
+    void differenceTestSubtractNumberFromZeroExpectNegative() {
+        Calculator calculator = new Calculator();
+        assertEquals(-1, calculator.difference(0, 1));
+    }
 }
