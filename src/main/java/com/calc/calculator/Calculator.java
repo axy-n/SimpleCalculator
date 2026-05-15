@@ -15,6 +15,10 @@ public class Calculator {
     }
 
     public String fraction(int numerator, int denominator) {
+        if (denominator == 0) {
+            System.out.println("Denom can't be zero");
+            return "Denom 0";
+        }
         Fraction fraction = new Fraction(numerator, denominator);
         return fraction.toString();
     }
