@@ -22,6 +22,6 @@ class CalculatorTest {
     @Test
     void differenceTestAddTwoNumbersExpectDifference() {
         Calculator calculator = new Calculator();
-        assertEquals(0, calculator.difference(5, 5));
+        assertEquals(1, calculator.difference(6, 5));
     }
 }
